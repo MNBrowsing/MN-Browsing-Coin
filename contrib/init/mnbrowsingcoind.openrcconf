@@ -1,0 +1,26 @@
+# /etc/conf.d/mnbrowsingcoind: config file for /etc/init.d/mnbrowsingcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/mnbrowsingcoin/mnbrowsingcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/mnbrowsingcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/mnbrowsingcoind.pid"
+
+# Where to write mnbrowsingcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/mnbrowsingcoind"
+
+# User and group to own mnbrowsingcoind process
+#BITCOIND_USER="mnbrowsingcoin"
+#BITCOIND_GROUP="mnbrowsingcoin"
+
+# Path to mnbrowsingcoind executable
+#BITCOIND_BIN="/usr/bin/mnbrowsingcoind"
+
+# Nice value to run mnbrowsingcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ca">locale/mnbrowsingcoin_ca.qm</file>
+        <file alias="da">locale/mnbrowsingcoin_da.qm</file>
+        <file alias="de">locale/mnbrowsingcoin_de.qm</file>
+        <file alias="en">locale/mnbrowsingcoin_en.qm</file>
+        <file alias="en_US">locale/mnbrowsingcoin_en_US.qm</file>
+        <file alias="es">locale/mnbrowsingcoin_es.qm</file>
+        <file alias="fr_FR">locale/mnbrowsingcoin_fr_FR.qm</file>
+        <file alias="it">locale/mnbrowsingcoin_it.qm</file>
+        <file alias="ja">locale/mnbrowsingcoin_ja.qm</file>
+        <file alias="pt">locale/mnbrowsingcoin_pt.qm</file>
+        <file alias="ro_RO">locale/mnbrowsingcoin_ro_RO.qm</file>
+        <file alias="ru">locale/mnbrowsingcoin_ru.qm</file>
+        <file alias="zh_TW">locale/mnbrowsingcoin_zh_TW.qm</file>
+    </qresource>
+</RCC>

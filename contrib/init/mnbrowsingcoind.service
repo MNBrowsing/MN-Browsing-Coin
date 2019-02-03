@@ -1,0 +1,26 @@
+[Unit]
+Description=MN Browsing Coin's distributed currency daemon
+After=network.target
+
+[Service]
+User=mnbrowsingcoin
+Group=mnbrowsingcoin
+
+Type=forking
+PIDFile=/var/lib/mnbrowsingcoind/mnbrowsingcoind.pid
+
+ExecStart=/usr/bin/mnbrowsingcoind -daemon -pid=/var/lib/mnbrowsingcoind/mnbrowsingcoind.pid \
+          -conf=/etc/mnbrowsingcoin/mnbrowsingcoin.conf -datadir=/var/lib/mnbrowsingcoind
+
+ExecStop=-/usr/bin/mnbrowsingcoin-cli -conf=/etc/mnbrowsingcoin/mnbrowsingcoin.conf \
+         -datadir=/var/lib/mnbrowsingcoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

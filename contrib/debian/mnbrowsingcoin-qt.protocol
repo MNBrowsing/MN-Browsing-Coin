@@ -1,0 +1,11 @@
+[Protocol]
+exec=mnbrowsingcoin-qt '%u'
+protocol=mnbrowsingcoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

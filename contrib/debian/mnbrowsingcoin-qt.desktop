@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=MN Browsing Coin
+Comment=MN Browsing Coin P2P Cryptocurrency
+Comment[fr]=MN Browsing Coin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=MN Browsing Coin, eşten eşe kriptografik sanal para birimi
+Exec=mnbrowsingcoin-qt %u
+Terminal=false
+Type=Application
+Icon=mnbrowsingcoin128
+MimeType=x-scheme-handler/mnbrowsingcoin;
+Categories=Office;Finance;
