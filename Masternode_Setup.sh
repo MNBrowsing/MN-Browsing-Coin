@@ -16,8 +16,8 @@ echo "${Green}I've finished upgrading! Now I need to install dependencies"
 	sudo apt-get install nano unzip git -y
 
 echo "${Green}I've finished installing dependencies! Now I'll make folders and download the wallet."
-	wget https://github.com/MNBCDeveloperTeam/MNBCCoin/releases/download/v1.0/MN Browsing Coin-1.0.0-x86_64-pc-linux-gnu.zip
-	unzip MN Browsing Coin-1.0.0-x86_64-pc-linux-gnu.zips
+	wget https://github.com/MNBrowsing/MN-Browsing-Coin/releases/download/v1.0/MNBC-1.0.0-x86_64-pc-linux-gnu.zip
+	unzip MN MNBC-1.0.0-x86_64-pc-linux-gnu.zip
 	chmod +x mnbrowsingcoin*
 	
 	./mnbrowsingcoind -daemon
@@ -40,14 +40,14 @@ echo "${Green}I've finished making folders and downloading the wallet! Now I'll 
 	echo "server=1" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
 	echo "listen=1" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
 	echo "staking=1" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
-	echo "port=57810" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
+	echo "port=59867" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
 	echo "masternode=1" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
 	
 	echo "${Green}What is the Global IP of your VPS? I'll put this into your config file for you because I'm so nice."
 		read VPSip
-			echo "masternodeaddr=$VPSip:57810" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
-			echo "bind=$VPSip:57810" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
-			echo "externalip=$VPSip:57810" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
+			echo "masternodeaddr=$VPSip:59867" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
+			echo "bind=$VPSip:59867" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
+			echo "externalip=$VPSip:59867" >> /root/.mnbrowsingcoin/mnbrowsingcoin.conf
 	         
 	echo "${Green}What is your masternode genkey? I'll put this into your config file."
 		read genkey
